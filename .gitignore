@@ -1,0 +1,4 @@
+config.json
+trade_db
+*.log
+__pycache__

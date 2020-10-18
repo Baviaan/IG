@@ -1,0 +1,4 @@
+discord.py>=1.5
+psutil>=5.7
+requests>=2.24
+tabulate>=0.8
