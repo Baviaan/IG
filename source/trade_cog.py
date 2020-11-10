@@ -213,7 +213,7 @@ class TradeCog(commands.Cog):
             if price > alert[2]:
                 name = result['instrumentName']
                 msg = "<@!{user_id}> ".format(user_id=alert[1])
-                msg = msg + "{name} is at ${price}.".format(name=name, price=price)
+                msg = msg + "`{expiry} {strike}p` is at ${price}.".format(expiry=expiry, strike=strike, price=price)
                 await channel.send(msg)
                 alerts.remove(alert)
                 db.delete_alert(alert[0])
